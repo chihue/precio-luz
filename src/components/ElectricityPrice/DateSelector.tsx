@@ -2,8 +2,6 @@
 
 import { format, addDays, isBefore, isAfter } from "date-fns"
 import { CalendarIcon, ChevronLeft, ChevronRight } from 'lucide-react'
-
-import { Calendar } from "@/components/ui/calendar"
 import {
     Popover,
     PopoverContent,
