@@ -50,18 +50,7 @@ export default function DateSelector({ date }: { date: Date }) {
                     </Button>
                 </PopoverTrigger>
                 <PopoverContent className="w-auto p-0">
-                    <Calendar
-                        mode="single"
-                        selected={date}
-                        onSelect={(newDate) => {
-                            if (newDate) {
-                                router.push(`?day=${format(newDate, "yyyy-MM-dd")}`)
-                            }
-                        }}
-                        disabled={(date) => isAfter(date, today) || isBefore(date, new Date("2021-01-01"))}
-                        initialFocus
-                        className="rounded-md border"
-                    />
+
                 </PopoverContent>
             </Popover>
             <Button
