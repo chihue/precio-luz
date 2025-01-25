@@ -9,7 +9,7 @@ export function FormatHour(hour: number): string {
 }
 
 export function PaddingZeros(num: number, size: number): string {
-    var s = num + "";
+    let s = num + "";
     while (s.length < size) s = "0" + s;
     return s;
 }

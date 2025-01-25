@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Provider from "@/service/Provider";
 import type { Metadata } from "next";

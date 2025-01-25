@@ -78,15 +78,15 @@ export default async function Request({
                     status: res.status,
                     body,
                 };
-            }).catch((err) => {
-                //console.error(err);
+            }).catch((_err) => {
+                //console.error(_err);
                 return {
                     ok: false,
                     status: -1,
                 };
             });
-    } catch (err: any) {
-        //console.error(err);
+    } catch (_err) {
+        //console.error(_err);
     }
 
     return responseDoc;

@@ -24,7 +24,7 @@ export default function DateSelector({ date }: { date: Date }) {
         if (isBefore(today, date)) {
             router.push(`?day=${format(today, "yyyy-MM-dd")}`)
         }
-    }, [date])
+    }, [date, router])
 
 
     return (
